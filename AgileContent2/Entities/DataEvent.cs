@@ -24,7 +24,7 @@ namespace AgileContent2.Entities
     public class DataEvent
     {
         public int responseSize { get; set; }
-        public int operationTime { get; set; }
+        public double operationTime { get; set; }
         public string httpPath { get; set; }
         public string httpVersion { get; set; }
         public string systemName { get; set; }
@@ -32,7 +32,7 @@ namespace AgileContent2.Entities
         public OperationResult operationResult { get; set; }
         public HttpOperationType httpOperationType { get; set; }
 
-        public DataEvent(int _responseSize, int _operationTime, string _httpPath, 
+        public DataEvent(int _responseSize, double _operationTime, string _httpPath, 
                     string _httpVersion, string _systemName, HttpReturnCode _httpReturnCode,
                     OperationResult _operationResult, HttpOperationType _httpOperationType)
         {

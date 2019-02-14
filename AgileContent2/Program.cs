@@ -12,6 +12,7 @@ namespace AgileContent2
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
         }
 
         public static void ConvertFile(string sourceUrl, string targetPath)
@@ -28,6 +29,6 @@ namespace AgileContent2
             {
                 client.DownloadFile(sourceUrl, Path.ChangeExtension(outputPath, "tmp"));
             }
-        }
+        } 
     }
 }
