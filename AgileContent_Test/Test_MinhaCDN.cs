@@ -23,7 +23,6 @@ namespace AgileContent_Test
         {
             List<DataEvent> result = dataInterpreter.InterpretData(example);
 
-            // Testar
             Assert.AreEqual(result.Count, 4);
         }
 
