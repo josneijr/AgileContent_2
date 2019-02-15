@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileContent2", "AgileContent2\AgileContent2.csproj", "{6AAFF6C6-4974-43AB-9F75-35BCE9D7651F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileContent_Test", "AgileContent_Test\AgileContent_Test.csproj", "{7C2AF6FF-E106-4EE4-9A02-A1EFC2D5B4BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileContent2_Test", "AgileContent_Test\AgileContent2_Test.csproj", "{7C2AF6FF-E106-4EE4-9A02-A1EFC2D5B4BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

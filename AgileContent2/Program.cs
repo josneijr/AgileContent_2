@@ -13,7 +13,15 @@ namespace AgileContent2
     {
         public static void Main(string[] args)
         {
-            ConvertFile(args[0], args[1]);
+            if(args.Length < 2)
+            {
+                Console.WriteLine("Número incorreto de parâmetros");
+                Console.Read();
+            }
+            else
+            {
+                ConvertFile(args[0], args[1]);
+            }
         }
 
         public static void ConvertFile(string sourceUrl, string targetPath)
@@ -29,7 +37,7 @@ namespace AgileContent2
                 DownloadFile(sourceUrl, downloadPath);
 
                 //Vamos agora abrir o arquivo e deixá-lo em memória
-                string fileContent = OpenFileContent(targetPath);
+                string fileContent = OpenFileContent(downloadPath);
 
                 //Vamos interpretar o arquivo, pegando todos os eventos que encontrarmos
                 List<DataEvent> dataEvents = dataInterpreter.InterpretData(fileContent);
@@ -38,7 +46,7 @@ namespace AgileContent2
                 string output = dataReformat.ReformatData(dataEvents);
 
                 //Por último, flush nos dados
-                SaveBufferToFile(output);
+                SaveBufferToFile(output, targetPath);
             }
             catch(Exception e)
             {
@@ -46,9 +54,9 @@ namespace AgileContent2
             }
         }
 
-        private static void SaveBufferToFile(string output)
+        private static void SaveBufferToFile(string outputContent, string outputPath)
         {
-
+            File.WriteAllText(outputPath, outputContent);
         }
 
         public static void DownloadFile(string sourceUrl, string outputPath)
@@ -61,7 +69,7 @@ namespace AgileContent2
 
         public static string OpenFileContent(string filePath)
         {
-            return "";
+            return File.ReadAllText(filePath); ;
         }
     }
 }
