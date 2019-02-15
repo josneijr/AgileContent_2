@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileContent2", "AgileConte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileContent2_Test", "AgileContent_Test\AgileContent2_Test.csproj", "{7C2AF6FF-E106-4EE4-9A02-A1EFC2D5B4BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileContent1", "AgileContent1\AgileContent1.csproj", "{6F91773F-7F34-4598-86B1-744331CCAB1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,5 +21,9 @@ Global
 		{7C2AF6FF-E106-4EE4-9A02-A1EFC2D5B4BB}.Debug|x86.Build.0 = Debug|Any CPU
 		{7C2AF6FF-E106-4EE4-9A02-A1EFC2D5B4BB}.Release|x86.ActiveCfg = Release|Any CPU
 		{7C2AF6FF-E106-4EE4-9A02-A1EFC2D5B4BB}.Release|x86.Build.0 = Release|Any CPU
+		{6F91773F-7F34-4598-86B1-744331CCAB1D}.Debug|x86.ActiveCfg = Debug|x86
+		{6F91773F-7F34-4598-86B1-744331CCAB1D}.Debug|x86.Build.0 = Debug|x86
+		{6F91773F-7F34-4598-86B1-744331CCAB1D}.Release|x86.ActiveCfg = Release|x86
+		{6F91773F-7F34-4598-86B1-744331CCAB1D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
